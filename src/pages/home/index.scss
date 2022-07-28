@@ -1,0 +1,83 @@
+.banner{
+    background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url(../../assets/img/dwp.jpg);
+    width:100%;
+    min-height:60vh;
+    background-size:100% 100%;
+
+    h1{
+    color:aliceblue;
+    font-family:'Shojumaru', sans-serif;
+    padding-top:5px;
+    }
+
+    .searchBox{
+        padding-top: 150px;
+        font-family: 'Poppins', sans-serif;
+
+        input{
+            width: 20rem;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            box-shadow: 0 0 15px #333745;
+            margin: auto;
+            text-align: center;
+
+            &:focus{
+                outline: none;
+            }
+        }
+
+        // button{
+        //     border: none;
+        //     padding: 10px;
+        //     color: aliceblue;
+        //     border-radius: 5px;
+        //     background-color: #333745;
+        //     box-shadow: 0 0 10px black;
+        //     transition: 0.4s;
+
+        //     &:hover{
+        //         background-color: red;
+        //     }
+        // }
+    
+    }
+}
+
+.digi-card{
+    background-color: #333745;
+    width: 20rem;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+
+    img{
+        width: 10rem;
+    }
+}
+
+.row{
+    margin: 0!important;
+}
+
+.pagination-digimons{
+    flex-wrap: wrap;
+
+    button{
+        background: rgb(30, 25, 61);
+        border: none;
+        box-shadow: 0 0 5px black;
+        border-radius: 5px;
+        color: aliceblue;
+        margin-left: 10px;
+        font-size: 12px;
+        margin-bottom: 10px;
+        padding: 10px;
+        transition: 0.4s;
+
+        &:hover{
+            background-color: red;
+        }
+        
+    }
+}
