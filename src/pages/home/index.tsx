@@ -36,15 +36,19 @@ export default function Home() {
 
     useEffect(() => {
         searchDigimon()
+        // eslint-disable-next-line
     }, [search])
 
     useEffect(() => {
         setDigimons(digimon)
-    }, [])
+    }, [digimon])
 
 
     return(
         <>
+        <div className="teste">
+            <select value={itensPerPage} onChange={(e) => setItensPerPage(Number(e.target.value))}></select>
+        </div>
        
             <div className="banner container-fluid">
                 <h1 className="text-center">DigiDex</h1>
