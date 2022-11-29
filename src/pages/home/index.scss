@@ -1,8 +1,16 @@
+body{
+    background-color:#202020;
+}
+
 .banner{
     background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url(../../assets/img/dwp.jpg);
     width:100%;
     min-height:60vh;
     background-size:100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
     h1{
     color:aliceblue;
@@ -14,9 +22,14 @@
         padding-top: 150px;
         font-family: 'Poppins', sans-serif;
 
-        input{
-            width: 20rem;
+        .search{
+            background-color: rgb(53, 48, 48);
             padding: 10px;
+        }
+
+        input{
+            width: 100%;
+            padding: 15px 10px;
             border-radius: 5px;
             border: none;
             box-shadow: 0 0 15px #333745;
@@ -27,32 +40,23 @@
                 outline: none;
             }
         }
-
-        // button{
-        //     border: none;
-        //     padding: 10px;
-        //     color: aliceblue;
-        //     border-radius: 5px;
-        //     background-color: #333745;
-        //     box-shadow: 0 0 10px black;
-        //     transition: 0.4s;
-
-        //     &:hover{
-        //         background-color: red;
-        //     }
-        // }
     
     }
 }
 
 .digi-card{
-    background-color: #333745;
-    width: 20rem;
+    background-color: white;
+    width: 22rem;
+    color: black;
     border-radius: 10px;
-    font-family: 'Poppins', sans-serif;
+    border: solid 4px black;
+    box-shadow: 15px 15px 0 -4px white,
+                15px 15px black;
+    font-family: 'Shojumaru', sans-serif;
 
     img{
         width: 10rem;
+        border-radius: 5px;
     }
 }
 
@@ -64,7 +68,7 @@
     flex-wrap: wrap;
 
     button{
-        background: rgb(30, 25, 61);
+        background: #333745;
         border: none;
         box-shadow: 0 0 5px black;
         border-radius: 5px;
@@ -79,5 +83,25 @@
             background-color: red;
         }
         
+    }
+}
+
+.end{
+    border-top: 1px solid #333745;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    color: aliceblue;
+    font-size: 20px;
+    transition: 1s;
+
+    a{
+        text-decoration: none;
+        color: aliceblue;
+
+        &:hover{
+            color: red;
+        }
     }
 }
